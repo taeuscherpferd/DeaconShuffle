@@ -1,0 +1,23 @@
+.Home {
+  display: flex;
+  background-color: orange;
+  color: antiquewhite;
+  overflow: hidden;
+}
+
+.textContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 1rem;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.textArea {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  width: 100%;
+}
