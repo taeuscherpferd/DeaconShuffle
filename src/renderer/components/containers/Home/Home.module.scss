@@ -1,8 +1,6 @@
 .Home {
   display: flex;
-  background-color: orange;
-  color: antiquewhite;
-  overflow: hidden;
+  flex: 1;
 }
 
 .textContainer {
@@ -12,7 +10,6 @@
   justify-content: space-evenly;
   padding: 1rem;
   flex-direction: row;
-  overflow: hidden;
 }
 
 .textArea {
@@ -20,4 +17,14 @@
   height: 100%;
   flex: 1;
   width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.poolContainer {
+  display: flex;
+  flex-direction: column;
 }

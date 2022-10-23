@@ -12,13 +12,16 @@ const Home: React.FC<IProps> = (props) => {
   return (
     <div className={styles.Home}>
       <div className={styles.textContainer}>
-        <div>
+        <div className={styles.poolContainer}>
+          <span className={styles.title}>{"Minister Pool"}</span>
           <textarea value={peopleToPair} onChange={(x) => setPeopleToPair(x.target.value)} className={styles.textArea}></textarea>
         </div>
-        <div>
+        <div className={styles.poolContainer}>
+          <span className={styles.title}>{"Ministeree Pool"}</span>
           <textarea value={peopleToAssign} onChange={(x) => setPeopleToAssign(x.target.value)} className={styles.textArea}></textarea>
         </div>
-        <div>
+        <div className={styles.poolContainer}>
+          <span className={styles.title}>{"Results"}</span>
           <textarea value={results} onChange={(x) => setResults(x.target.value)} className={styles.textArea}></textarea>
         </div>
       </div>
