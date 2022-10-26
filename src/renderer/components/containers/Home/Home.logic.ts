@@ -29,10 +29,15 @@ export class HomeLogic {
     for (let i = 0, j = 0; i < ministerees.length; i += chunkSize, j++) {
       const chunk = ministerees.slice(i, i + chunkSize);
 
-      //TODO: Randomly assign these people
-      j < dict.length ?
-        dict[j].ministerees = chunk :
-        dict[dict.length - 1].ministerees = dict[dict.length - 1].ministerees.concat(chunk)
+      if (j < dict.length) {
+        dict[j].ministerees = chunk
+      }
+      else {
+        for (let person of chunk) {
+          const randomIndex = Math.floor(Math.random() * (dict.length - 1));
+          dict[randomIndex].ministerees.push(person)
+        }
+      }
     }
 
     return dict
